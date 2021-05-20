@@ -1,0 +1,182 @@
+{
+	"info": {
+		"_postman_id": "e956b632-8697-4130-80ad-58231e04b86c",
+		"name": "Exam",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/oauth/token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"grant_type\":\"password\",\n    \"client_id\":\"6\",\n    \"client_secret\":\"PBUkIMHMsqhfBkYyOP16AveOQwOvqL2doQsgEj9V\",\n    \"username\":\"testtimoy\",\n    \"password\":\"admin\",\n    \"scope\":\"*\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/oauth/token",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"oauth",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"testtimoy\",\n    \"password\":\"admin\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/invite",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI2IiwianRpIjoiNTFkYzE4ZGRlNmYzOWJiNjczYmJmMzIzYTY4ODU4MGU2NDc2M2NiNmVlMDIzMzAyMmU3ZjI3YTBhY2VjYTdlZjg2YTFiNDE3YjcxYjA0MjAiLCJpYXQiOjE2MjE0OTk1NjQuMTcwOTU0LCJuYmYiOjE2MjE0OTk1NjQuMTcwOTU3LCJleHAiOjE2MjI3OTU1NjQuMTYwNzI1LCJzdWIiOiIxNSIsInNjb3BlcyI6WyIqIl19.f40VNr8xq6rqq-09XJ1AVNE1EISyCxuAgILR5zgdAQHVGSB2LBirW6x2oyfIWxSlMv-Jb3F4r-8YR-JQ_AUPMm-ecwuTLRnuOy9Dfs7vjU5gOQuD510ev9NpdHKCXSDv9GvmcLjeygEQn8CaMrzzhYAFKWmQJcynaDOoEBeL2Epu-UJHIvmJnZepxSDWKsUUxTfN1IbTlXhvAXkauMpZpgM4mKrgwJk6vci-xKAKchS9UejFao6g3vExh00pNslEKJKZ_8kGrXAWM5om17MYdAE3dgRzDJOzvUXMSECIU_9nkGEp7aacRHsGKgi0OFdyA7HG9TnROUXVFCJuS_zle_jjNr7Addlmcb7PadSsLrUZCCVVQRRno30C6f8SRksv11sXMIYGK1HEDElQ3te47CSxXUWt3IUF0Lj71fuS93snGcCWTMzpWlZ6K_MFah9ex95D8STX9dIzn2IP4BFItV2RJ0hnIXBtpWw3z9p6HyPSh5d0dNifXWtp1sDeXeK6kVO64Uere5wcQ_6FO3evs8ts-US0z3aFxaFKy9_7BrUPc3_QK45Q_fLluQntWKe2-hp7KPA9KDGqLpeALQrbLVfj50C3WbiKZfXihy3DCBZMZJCpKJxQQRW_-iP7LN3CUwnpRgYYHYH1OwpsRNuDz_vCzvmuIkByjZ3wvwEy2hQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"garadotimoy@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/invite",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"invite"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/invitation/cdbbf03567ced8e15f7dc32252f1c0a6",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"test123\",\n    \"password\":\"test123\",\n    \"code\":\"843159\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/invitation/cdbbf03567ced8e15f7dc32252f1c0a6",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"invitation",
+						"cdbbf03567ced8e15f7dc32252f1c0a6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/user",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI2IiwianRpIjoiNTFkYzE4ZGRlNmYzOWJiNjczYmJmMzIzYTY4ODU4MGU2NDc2M2NiNmVlMDIzMzAyMmU3ZjI3YTBhY2VjYTdlZjg2YTFiNDE3YjcxYjA0MjAiLCJpYXQiOjE2MjE0OTk1NjQuMTcwOTU0LCJuYmYiOjE2MjE0OTk1NjQuMTcwOTU3LCJleHAiOjE2MjI3OTU1NjQuMTYwNzI1LCJzdWIiOiIxNSIsInNjb3BlcyI6WyIqIl19.f40VNr8xq6rqq-09XJ1AVNE1EISyCxuAgILR5zgdAQHVGSB2LBirW6x2oyfIWxSlMv-Jb3F4r-8YR-JQ_AUPMm-ecwuTLRnuOy9Dfs7vjU5gOQuD510ev9NpdHKCXSDv9GvmcLjeygEQn8CaMrzzhYAFKWmQJcynaDOoEBeL2Epu-UJHIvmJnZepxSDWKsUUxTfN1IbTlXhvAXkauMpZpgM4mKrgwJk6vci-xKAKchS9UejFao6g3vExh00pNslEKJKZ_8kGrXAWM5om17MYdAE3dgRzDJOzvUXMSECIU_9nkGEp7aacRHsGKgi0OFdyA7HG9TnROUXVFCJuS_zle_jjNr7Addlmcb7PadSsLrUZCCVVQRRno30C6f8SRksv11sXMIYGK1HEDElQ3te47CSxXUWt3IUF0Lj71fuS93snGcCWTMzpWlZ6K_MFah9ex95D8STX9dIzn2IP4BFItV2RJ0hnIXBtpWw3z9p6HyPSh5d0dNifXWtp1sDeXeK6kVO64Uere5wcQ_6FO3evs8ts-US0z3aFxaFKy9_7BrUPc3_QK45Q_fLluQntWKe2-hp7KPA9KDGqLpeALQrbLVfj50C3WbiKZfXihy3DCBZMZJCpKJxQQRW_-iP7LN3CUwnpRgYYHYH1OwpsRNuDz_vCzvmuIkByjZ3wvwEy2hQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"test\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/user",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
